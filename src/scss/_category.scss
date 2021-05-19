@@ -1,0 +1,81 @@
+.category {
+   padding-top: 120px;
+
+   &__title {
+      text-transform: capitalize;
+      margin-bottom: 31px;
+   }
+
+   &-carousel {
+      .category-nav {
+
+         .category-prev,
+         .category-next {
+            background: none;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+
+            i {
+               color: #fff;
+               font-size: 25px;
+               &:hover {
+                  cursor: pointer;
+               }
+            }
+         }
+
+         .category-prev {
+            left: 100px;
+         }
+
+         .category-next {
+            right: 100px;
+         }
+      }
+   }
+
+   .wrapper {
+      position: relative;
+      transform: skew(-25deg);
+
+      img {
+         transform: skew(25deg);
+      }
+
+      &::after {
+         content: '';
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         width: 82%;
+         height: 100%;
+         background: linear-gradient(180deg, rgba(0, 0, 0, 0.62) 0%, rgba(0, 0, 0, 0) 100%);
+      }
+
+      &-1 {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%) skew(25deg);
+         width: 100px;
+         height: 100px;
+         width: 100%;
+         height: 100%;
+         z-index: 1;
+
+         &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: url(../img/category/cycle1.png) center center / contain no-repeat;
+            width: 50%;
+            height: 100px;
+            z-index: 2;
+         }
+      }
+   }
+}
