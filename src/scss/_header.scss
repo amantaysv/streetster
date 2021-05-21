@@ -42,22 +42,24 @@
       }
 
       &-nav {
-         // display: none;
-         visibility: hidden;
-         position: absolute;
+         position: fixed;
          top: 0;
          right: 0;
-         width: 346px;
-         padding-left: 72px;
-         padding-top: 65px;
+         max-width: 346px;
+         width: 80%;
+         height: 500px;
          background: #fff;
-         transition: opacity 0.5s ease;
+         padding: 120px 0 90px 72px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         align-items: flex-start;
          opacity: 0;
-
+         visibility: hidden;
+         transition: opacity 0.8s ease;
          &.active {
-            // display: block;
             visibility: visible;
-            transition: opacity 0.5s ease;
+            transition: opacity .8s ease;
             opacity: 1;
          }
       }
@@ -72,6 +74,12 @@
          text-transform: uppercase;
          color: #000;
          text-decoration: none;
+
+         &-300 {
+            font-weight: 300;
+            text-transform: capitalize;
+            font-size: 18px;
+         }
       }
    }
 

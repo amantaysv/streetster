@@ -7,29 +7,33 @@
    }
 
    &-carousel {
-      .category-nav {
+      .owl-nav {
 
-         .category-prev,
-         .category-next {
-            background: none;
+         .owl-prev,
+         .owl-next {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
 
-            i {
+            &:hover {
+               background: none;
+            }
+
+            span {
                color: #fff;
-               font-size: 25px;
+               font-size: 60px;
+
                &:hover {
                   cursor: pointer;
                }
             }
          }
 
-         .category-prev {
+         .owl-prev {
             left: 100px;
          }
 
-         .category-next {
+         .owl-next {
             right: 100px;
          }
       }

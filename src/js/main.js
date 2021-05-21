@@ -10,6 +10,16 @@ var owl = $(".category-carousel");
 owl.owlCarousel({
   loop: true,
   dots: false,
+  nav: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    576: {
+      items: 3,
+      nav:true,
+    }
+  }
 });
 $(".category-next").click(function () {
   owl.trigger("next.owl.carousel");
@@ -22,6 +32,14 @@ var owl = $(".news-carousel");
 owl.owlCarousel({
   loop: true,
   dots: false,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    576: {
+      items: 3,
+    },
+  },
 });
 $(".news-next").click(function () {
   owl.trigger("next.owl.carousel");

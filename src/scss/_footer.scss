@@ -3,28 +3,32 @@
    background-color: #151515;
    display: flex;
 
-   &__ul {
+   &-nav {
       color: white;
       font-size: 18px;
    }
-   &__li {
+
+   &-item {
       color: white;
       font-weight: normal;
       list-style: none;
       padding-top: 10px;
       font-weight: 300;
+
       &:first-child {
          font-weight: 700;
       }
    }
+
    &__descr {
       text-align: center;
       padding-top: 50px;
       padding-bottom: 70px;
       color: #484848;
    }
+
    &__img {
-      
+
       padding-right: 152px;
    }
 }
