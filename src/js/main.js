@@ -13,6 +13,7 @@ var owl = $(".category-carousel");
 owl.owlCarousel({
   loop: true,
   dots: false,
+  smartSpeed: 1000,
   nav: true,
   responsive: {
     0: {
@@ -27,6 +28,7 @@ owl.owlCarousel({
 var owl = $(".news-carousel");
 owl.owlCarousel({
   loop: true,
+  smartSpeed: 1000,
   dots: false,
   responsive: {
     0: {
